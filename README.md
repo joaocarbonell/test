@@ -13,12 +13,12 @@ npm run install
 ```
 Access the PHP container and run the `composer install`
 ```
-docker exec -ti php_fpm_jetimob5 bash
+docker exec -ti php_fpm_jet_project bash
 composer install
 ```
 or use this short version
 ```
-docker exec -ti php_fpm_jetimob5 composer install
+docker exec -ti php_fpm_jet_project composer install
 ```
 
 
