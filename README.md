@@ -7,7 +7,7 @@ to detach and not block the terminal
 docker-compose up --build -d
 ```
 #### Dependencies
-Need to rum on the root of project
+Need to run on the root of project
 ```
 npm install
 ```
