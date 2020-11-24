@@ -13,7 +13,7 @@ npm install
 ```
 Access the PHP container and run the `composer install`
 ```
-docker exec -ti php_fpm_jet_project bash
+docker exec -ti php7.4_fpm_jet_project bash
 composer install
 ```
 or use this short version
