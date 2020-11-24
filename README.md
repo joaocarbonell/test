@@ -18,7 +18,7 @@ composer install
 ```
 or use this short version
 ```
-docker exec -ti php_fpm_jet_project composer install
+docker exec -ti php7.4_fpm_jet_project composer install
 ```
 
 
