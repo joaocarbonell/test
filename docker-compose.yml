@@ -1,0 +1,52 @@
+version: '3.7'
+
+services:
+  webserver:
+    image: nginx:1.17.8
+    container_name: nginx_jet_project
+    working_dir: /srv/app
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/nginx/ssl/jettest.com/localhost.crt:/etc/ssl/certs/localhost.crt
+      - ./docker/nginx/ssl/jettest.com/localhost.key:/etc/ssl/private/localhost.key
+      - .:/srv/app
+    ports:
+      - 80:80
+      - 9999:9999
+      - 443:443
+    networks:
+      jet_project-network:
+        ipv4_address: 192.168.21.211
+
+  php-fpm:
+    build: docker/php7.4
+    container_name: php7.4_fpm_jet_project
+    working_dir: /srv/app
+    volumes:
+      - .:/srv/app/
+      - ./docker/php7.4/php-ini-overrides.ini:/etc/php/7.4/fpm/conf.d/99-overrides.ini
+      - ./docker/php7.4/xdebug.ini:/etc/php/7.4/mods-available/xdebug.ini
+    networks:
+      jet_project-network:
+        ipv4_address: 192.168.21.212
+
+  postgres:
+    image: 'postgres:12.2-alpine'
+    container_name: postgres_jet_project
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_DB=${DB_DATABASE}
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    networks:
+      jet_project-network:
+        ipv4_address: 192.168.21.214
+
+#Docker Networks
+networks:
+  jet_project-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.21.0/24
