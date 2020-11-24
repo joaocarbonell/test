@@ -9,7 +9,7 @@ docker-compose up --build -d
 #### Dependencies
 Need to rum on the root of project
 ```
-npm run install
+npm install
 ```
 Access the PHP container and run the `composer install`
 ```
