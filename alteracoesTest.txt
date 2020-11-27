@@ -1,9 +1,0 @@
-Copy and past the .env.example file. After, rename the copy to <.env>.
-
-Inside the .env file ->
-Change the DB_CONNECTION from <postgres> to <pgsql>
-Change the DB_HOST from <192.168.20.204> to <192.168.20.214>
-<-
-
-Inside the database.php file ->
-Change the 'default' from <env('DB_CONNECTION', 'mysql')> to <'default' => env<('DB_CONNECTION', 'pgsql')>
