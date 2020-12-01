@@ -13,8 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('/posts/{slug}', 'App\Http\Controllers\PostController@show');
+
+Route::get('/about', function () {
+
+    return view('about', [
+        'articles' => App\Models\Article::take(3)->latest()->get()
+    ]);
+
+});
+
+Route::get('articles',  'App\Http\Controllers\ArticlesController@index');
+
+Route::get('articles/{article}',  'App\Http\Controllers\ArticlesController@show');
+
+
+
+

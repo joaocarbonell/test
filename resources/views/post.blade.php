@@ -10,9 +10,10 @@
     http-equiv="X-UA-Compatible"
     content="ie=edge"
     >
-    <title>Document</title>
+    <title>{{$post->title}}</title>
     <body>
-    <h1>{{$post}}</h1>
+    <h1>{{$post->title}}</h1>
+    <h2>{{$post->body}}</h2>
 </body>
 
 </head>
