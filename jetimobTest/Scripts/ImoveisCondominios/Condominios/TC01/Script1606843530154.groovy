@@ -51,7 +51,7 @@ WebUI.click(findTestObject('a_Prximo/a_Prximo'))
 WebUI.scrollToElement(findTestObject('Object Repository/Page_Condomnios  Novo/textarea_TV a cabo_external_observation'), 
     30)
 
-WebUI.setText(findTestObject('Object Repository/Page_Condomnios  Novo/textarea_TV a cabo_external_observation'), 'Ambar')
+WebUI.setText(findTestObject('Object Repository/Page_Condomnios  Novo/textarea_TV a cabo_external_observation'), 'Valor de teste')
 
 WebUI.click(findTestObject('a_Prximo/a_Prximo'))
 
