@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Loading</name>
+   <tag></tag>
+   <elementGuidId>c8ed1168-c9ce-4569-b7ff-be588d89fcad</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div[name=&quot;neighborhood&quot;] > div.vs__dropdown-toggle > div.vs__actions</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='step-1']/div[2]/div/div/div/span/div/div/div[5]/div/div/div/div/span/div/div/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>vs__actions</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>  Loading...</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;step-1&quot;)/div[@class=&quot;card-content-wrapper&quot;]/div[@class=&quot;card --rounded-bottom&quot;]/div[@class=&quot;card-content default-padding&quot;]/div[1]/span[1]/div[@class=&quot;columns is-multiline&quot;]/div[@class=&quot;column is-12 is-multiline columns&quot;]/div[@class=&quot;column is-6&quot;]/div[@class=&quot;field&quot;]/div[@class=&quot;control&quot;]/div[@class=&quot;custom-select&quot;]/div[@class=&quot;tooltip&quot;]/span[1]/div[@class=&quot;v-select vs--open vs--single vs--searchable&quot;]/div[@class=&quot;vs__dropdown-toggle&quot;]/div[@class=&quot;vs__actions&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='step-1']/div[2]/div/div/div/span/div/div/div[5]/div/div/div/div/span/div/div/div[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nossa Senhora de Fátima'])[1]/following::div[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading...'])[2]/following::div[9]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Agro-Industrial'])[1]/preceding::div[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/div/div/div/span/div/div/div[2]</value>
+   </webElementXpaths>
+</WebElementEntity>

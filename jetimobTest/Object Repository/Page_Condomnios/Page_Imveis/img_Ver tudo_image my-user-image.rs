@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_Ver tudo_image my-user-image</name>
+   <tag></tag>
+   <elementGuidId>2c55de7a-c6a8-48d2-8756-1c1c5eca6ff0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>img.image.my-user-image</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='appM']/div[2]/nav/div/div[3]/a/div/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>image my-user-image</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>images/user_default.png</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;appM&quot;)/div[@class=&quot;l-top&quot;]/nav[@class=&quot;navbar&quot;]/div[@class=&quot;navbar-menu&quot;]/div[@class=&quot;navbar-end --margin-left-20 --transition-all&quot;]/a[@class=&quot;profile&quot;]/div[@class=&quot;avatar-status&quot;]/img[@class=&quot;image my-user-image&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='appM']/div[2]/nav/div/div[3]/a/div/img</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/a/div/img</value>
+   </webElementXpaths>
+</WebElementEntity>

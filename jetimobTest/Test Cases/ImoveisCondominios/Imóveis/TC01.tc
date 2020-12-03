@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Teste para cadastro de imóveis</description>
+   <name>TC01</name>
+   <tag>Cadastro</tag>
+   <comment></comment>
+   <testCaseGuid>d90fd9c6-79df-4df6-a4c6-198af66d650d</testCaseGuid>
+</TestCaseEntity>
