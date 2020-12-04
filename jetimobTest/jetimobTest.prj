@@ -6,6 +6,7 @@
    <UUID>65fcbd0c-337e-449c-8743-3923dd815756</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/home/joaocarbonell/PhpstormProjects/test/jetimobTest/jetimobTest.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

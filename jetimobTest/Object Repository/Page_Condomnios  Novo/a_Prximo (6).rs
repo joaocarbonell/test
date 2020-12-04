@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Prximo</name>
+   <name>a_Prximo (6)</name>
    <tag></tag>
-   <elementGuidId>f777bce7-a179-4a35-aa24-84b9c3ac2f95</elementGuidId>
-   <imagePath></imagePath>
+   <elementGuidId>5f7adc43-8d64-4765-be01-892c5852ce29</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value>#step-1 > div.card-content-wrapper > div.card.--rounded-bottom > div.card-content.default-padding > div > span > div.columns.is-mobile.nav-buttons > div.column.is-narrow > a.jet-button.hovered</value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-         <value></value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='step-1']/div[2]/div/div/div/span/div[2]/div[2]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#step-1 > div.card-content-wrapper > div.card.--rounded-bottom > div.card-content.default-padding > div > span > div.columns.is-mobile.nav-buttons > div.column.is-narrow > a.jet-button.hovered</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

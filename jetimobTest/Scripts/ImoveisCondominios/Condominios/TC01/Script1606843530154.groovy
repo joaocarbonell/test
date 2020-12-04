@@ -46,14 +46,26 @@ WebUI.setText(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios 
 
 WebUI.setText(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios  Novo/input_Loading..._number'), '1263')
 
-WebUI.click(findTestObject('a_Prximo/a_Prximo'))
+WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo (6)'))
 
 WebUI.scrollToElement(findTestObject('Object Repository/Page_Condomnios  Novo/textarea_TV a cabo_external_observation'), 
     30)
 
-WebUI.setText(findTestObject('Object Repository/Page_Condomnios  Novo/textarea_TV a cabo_external_observation'), 'Valor de teste')
+WebUI.setText(findTestObject('Object Repository/Page_Condomnios  Novo/textarea_TV a cabo_external_observation'), 'Ambar')
 
-WebUI.click(findTestObject('a_Prximo/a_Prximo'))
+WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo (1)'))
 
-WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo'))
+WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo (2)'))
+
+WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo (3)'))
+
+WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo (4)'))
+
+WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo (5)'))
+
+WebUI.click(findTestObject('Page_Condomnios  Novo/a_Salvar'))
+
+WebUI.click(findTestObject('Page_Condomnios  Novo/a_Remover'))
+
+WebUI.click(findTestObject('Page_Condomnios  Novo/button_Excluir'))
 
