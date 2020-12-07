@@ -2,7 +2,7 @@
 
 #### SET UP THE PROJECT
 To run the docker and build the containers. The option `--build` is to force build, and `-d` is
-to detach and not block the terminal
+to detach and not block the terminal.
 ```
 docker-compose up --build -d
 ```
