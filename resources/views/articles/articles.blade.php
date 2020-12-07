@@ -2,11 +2,8 @@
 
 @section('content')
 
-
     <div id="wrapper">
-        <div
-            id="page"
-             class="container">
+        <div id="page" class="container">
             @foreach ($articles as $article)
             <div id="content">
                 <div></div>
