@@ -9,7 +9,7 @@
                 <div></div>
                 <div class="title">
                     <h2>
-                        <a href="/articles/{{$article->id}}">
+                        <a href="{{ route('articles.show', $article) }}">
                             {{$article->title}}
                         </a>
                     </h2>
