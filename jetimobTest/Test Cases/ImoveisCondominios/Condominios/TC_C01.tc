@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Teste de cadastro de condominios</description>
-   <name>TC01</name>
+   <name>TC_C01</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>cff7f9f7-a04b-4784-a0e1-9480b111ef1e</testCaseGuid>
