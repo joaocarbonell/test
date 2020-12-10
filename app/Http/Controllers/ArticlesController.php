@@ -7,12 +7,9 @@ use App\Models\Article;
 
 class ArticlesController extends Controller
 {
-    public function show($id)
+    public function show(Article $article)
     {
-        $article = Article::find($id);
-
         return view('articles.show', [
-
             'article'=> $article
     ]);
     }
@@ -35,46 +32,24 @@ return view('articles.create');
 
     public function store()
     {
+        Article::create($this->validateArticle());
 
-        request()->validate([
-            'title' => 'required',
-            'excerpt' => 'required',
-            'body' => 'required'
-        ]);
-
-
-        $article = new Article();
-        $article->title = request('title');
-        $article->excerpt = request('excerpt');
-        $article->body = request('body');
-        $article->save();
-
-        return redirect('/articles');
+        return redirect(route('articles.index'));
 
     }
 
-    public function edit($id)
+    public function edit(Article $article)
     {
-        $article = Article::find($id);
 
         return view('articles.edit', compact('article'));
     }
 
-    public function update($id)
+    public function update(Article $article)
     {
-        request()->validate([
-            'title' => 'required',
-            'excerpt' => 'required',
-            'body' => 'required'
-        ]);
 
-        $article = Article::find($id);
-        $article->title = request('title');
-        $article->excerpt = request('excerpt');
-        $article->body = request('body');
-        $article->save();
+        $article->update($this->validateArticle());
 
-        return redirect('/articles/' .$article->id);
+        return redirect($article->path());
     }
 
     public function destroy()
@@ -82,7 +57,14 @@ return view('articles.create');
 
 
     }
-
+    protected function validateArticle()
+    {
+        return request()->validate([
+            'title' => 'required',
+            'excerpt' => 'required',
+            'body' => 'required'
+        ]);
+    }
 
 
 }
