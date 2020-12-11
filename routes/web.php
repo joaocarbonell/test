@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/posts/{slug}', 'App\Http\Controllers\PostController@show');
 
 Route::get('/about', function () {
@@ -28,7 +32,7 @@ Route::get('/about', function () {
 });
 
 Route::get('articles',
-    'App\Http\Controllers\ArticlesController@index')->name('articles.index');
+    'App\Http\Controllers\ArticlesController@index')->name('articles.index')->middleware('auth');
 
 Route::post('articles/',
     'App\Http\Controllers\ArticlesController@store');
@@ -46,3 +50,7 @@ Route::put('articles/{article}',
     'App\Http\Controllers\ArticlesController@update');
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
