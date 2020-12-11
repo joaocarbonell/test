@@ -4,7 +4,7 @@
 
     <div id="wrapper">
         <div id="page" class="container">
-            @foreach ($articles as $article)
+            @forelse ($articles as $article)
             <div id="content">
                 <div></div>
                 <div class="title">
@@ -24,7 +24,9 @@
 
 
         </div>
-        @endforeach
+            @empty
+            <p>Nenhum artigo ainda.</p>
+            @endforelse
     </div>
     </div>
 
