@@ -34,12 +34,6 @@ WebUI.click(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios/sp
 WebUI.setText(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios  Novo/input_Descrio do passo Dados do negcio et c_2f58c0'), 
     'Condominio Teste Katalon')
 
-WebUI.click(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios  Novo/div_Prximo'))
-
-WebUI.click(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios  Novo/a_Prximo'))
-
-WebUI.verifyElementText(findTestObject('Page_Condomnios  Novo/p_Este campo  obrigatrio'), 'Este campo é obrigatório')
-
 WebUI.click(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios  Novo/label_Sim'))
 
 WebUI.click(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios  Novo/div_Prximo'))
@@ -47,20 +41,14 @@ WebUI.click(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios  N
 WebUI.click(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios  Novo/a_Prximo'))
 
 WebUI.setText(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios  Novo/input_Descrio do passo Localizao et cetera _699bd5'), 
-    '97015-260')
+    '97010004')
 
-WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo (6)'))
-
-WebUI.verifyElementText(findTestObject('Page_Condomnios  Novo/p_Este campo  obrigatrio (1)'), 'Este campo é obrigatório')
-
-WebUI.setText(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios  Novo/input_Loading..._number'), '#%!%¨%#*')
+WebUI.setText(findTestObject('Object Repository/Page_Condomnios/Page_Condomnios  Novo/input_Loading..._number'), '1997')
 
 WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo (6)'))
 
 WebUI.scrollToElement(findTestObject('Object Repository/Page_Condomnios  Novo/textarea_TV a cabo_external_observation'), 
     30)
-
-WebUI.setText(findTestObject('Object Repository/Page_Condomnios  Novo/textarea_TV a cabo_external_observation'), 'Ambar')
 
 WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo (1)'))
 
@@ -70,15 +58,12 @@ WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo (3)'))
 
 WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo (4)'))
 
-WebUI.setText(findTestObject('Page_Condomnios  Novo/input_Loading..._input --flex-basis-95'), '123456789101112131415')
-
-WebUI.verifyElementText(findTestObject('Page_Condomnios  Novo/p_Este campo  obrigatrio (1)'), 'Falha ao salvar condomínio')
-
 WebUI.click(findTestObject('Page_Condomnios  Novo/a_Prximo (5)'))
 
 WebUI.click(findTestObject('Page_Condomnios  Novo/a_Salvar'))
 
-WebUI.click(findTestObject('Page_Condomnios  Novo/a_Remover'))
+WebUI.verifyElementPresent(findTestObject('Page_Condomnios  Novo/div_Oooops             O condomnio teste duplicidade est cadastrado neste endereo'), 
+    4)
 
-WebUI.click(findTestObject('Page_Condomnios  Novo/button_Excluir'))
+WebUI.closeBrowser()
 
